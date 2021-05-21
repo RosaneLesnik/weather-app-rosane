@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Wheater app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="weather-app/styles.css">
+
+
+    <script src="https://kit.fontawesome.com/9ec7063b26.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid p-3">
+        <div class="row mb-5">
+            <div class="col-9">
+                <h2>
+                    <button id="lisbon">Lisbon</button>
+                    <button id="dublin">Dublin</button>
+                    <button id="sevilla">Sevilla</button>
+                    <button id="current-location-button">Current Location</button>
+                </h2>
+            </div>
+
+
+            <div class="col-3">
+                <form id="go-form">
+                    <input type="search" id="go-input" placeholder="Enter a city" autocomplete="off"
+                        class="enter-city" />
+                    <input type="submit" value="Go" class="go-buttom" />
+                </form>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row mb-5">
+            <div class="offset-3 col-6">
+                <div class="d-flex align-items-center">
+                    <h1 id="city">
+
+                    </h1>
+
+
+                    <ul>
+                        <li> Description: <span id="description"></span></li>
+                        <li>Feels Like: <span id="feelsLike"></span></li>
+                        <li>Humidity: <span id="humidity">%</span></li>
+                        <li>Wind: <span id="wind"></span></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <h6 class="temperature" id="temperature"></h6>
+
+    </div>
+    <h4>Sunday, Jun 28, 2050. 16h30min.</h4>
+
+    <br><br><br><br>
+
+    <h3>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p>Sunday</p>
+                    <i class="fas fa-cloud-sun"></i>
+                    <p>18ºC</p>
+                </div>
+                <div class="col text-center">
+                    <p>Monday</p>
+                    <i class="fas fa-sun"></i>
+                    <p>20ºC</p>
+                </div>
+                <div class="col text-center">
+                    <p>Tuesday</p>
+                    <i class="fas fa-sun"></i>
+                    <p>21ºC</p>
+                </div>
+                <div class="col text-center">
+                    <p>Wednesday</p>
+                    <i class="fas fa-cloud"></i>
+                    <p>17ºC</p>
+                </div>
+                <div class="col text-center">
+                    <p>Thursday</p>
+                    <i class="fas fa-cloud-sun"></i>
+                    <p>19ºC</p>
+                </div>
+                <div class="col text-center">
+                    <p>Friday</p>
+                    <i class="fas fa-cloud-sun"></i>
+                    <p>19ºC</p>
+                </div>
+                <div class="col text-center">
+                    <p>Saturday</p>
+                    <i class="fas fa-cloud"></i>
+                    <p>17ºC</p>
+                </div>
+            </div>
+        </div>
+    </h3>
+
+    <h5>
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <script src="weather-app/index.js"></script>
+</body>
+</h5>
+
+</html>
