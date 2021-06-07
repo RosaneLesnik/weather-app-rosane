@@ -20,39 +20,34 @@
 </head>
 
 <body>
-
-    <div class="container-fluid p-3">
-        <div class = weather-app>
-        <div class="row mb-5">
-            <div class="col-9">
-                <h2>
-                    <button id="lisbon">Lisbon</button>
-                    <button id="dublin">Dublin</button>
-                    <button id="sevilla">Sevilla</button>
-                    <button id="current-location-button">Current Location</button>
-                </h2>
-            </div>
-
-
-            <div class="col-3">
+<div class = weather-app>
+    
+<div class="col-6">
                 <form id="go-form">
                     <input type="search" id="go-input" placeholder="Enter a city" autocomplete="off"
                         class="enter-city" />
                     <input type="submit" value="Go" class="go-buttom" />
                 </form>
             </div>
-        </div>
 
-        <br>
+            
+        <div class="container-fluid p-3">
+        
+        <div class="row mb-5">
+            <div class="col-9">
+                
+                <button id="current-location-button">Current Location</button>
+                
+            </div>
+            </div>
+            </div>
+
+            <h1 id="city"> </h1>
 
         <div class="row mb-5">
             <div class="offset-3 col-6">
                 <div class="d-flex align-items-center">
-                    <h1 id="city">
-
-                    </h1>
-
-                    <ul>
+                        <ul>
                         <li> Description: <span id="description"></span></li>
                         <li>Feels Like: <span id="feelsLike"></span></li>
                         <li>Humidity: <span id="humidity">%</span></li>
@@ -61,76 +56,17 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+           
     <br>
 
     <h6 class="temperature" id="temperature"></h6>
-
-    
+  </div>  
     <h4>Sunday, Jun 28, 2050. 16h30min.</h4>
 
-    <br><br><br><br>
-
-    <h3>
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <p>Sunday</p>
-                    <i class="fas fa-cloud-sun"></i>
-                    <p>18ºC</p>
-                </div>
-                <div class="col text-center">
-                    <p>Monday</p>
-                    <i class="fas fa-sun"></i>
-                    <p>20ºC</p>
-                </div>
-                <div class="col text-center">
-                    <p>Tuesday</p>
-                    <i class="fas fa-sun"></i>
-                    <p>21ºC</p>
-                </div>
-                <div class="col text-center">
-                    <p>Wednesday</p>
-                    <i class="fas fa-cloud"></i>
-                    <p>17ºC</p>
-                </div>
-                <div class="col text-center">
-                    <p>Thursday</p>
-                    <i class="fas fa-cloud-sun"></i>
-                    <p>19ºC</p>
-                </div>
-                <div class="col text-center">
-                    <p>Friday</p>
-                    <i class="fas fa-cloud-sun"></i>
-                    <p>19ºC</p>
-                </div>
-                <div class="col text-center">
-                    <p>Saturday</p>
-                    <i class="fas fa-cloud"></i>
-                    <p>17ºC</p>
-                </div>
-            </div>
-        </div>
-    </h3>
-
-    <h5>
-        <div class="container">
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-1"></div>
-                <div class="col-1"></div>
-                <div class="col-1"></div>
-                <div class="col-1"></div>
-                <div class="col-1"></div>
-                <div class="col-1"></div>
-            </div>
-        </div>
         <script src="index.js"></script>
-</body>
-</h5>
+<br>
+
+<h2><a href="https://github.com/RosaneLesnik/weather-app-rosane">Open-source code</a> by Rosane Lesnik!</h2>
 </div>
-<br><br><br><br>
-<a href="https://github.com/RosaneLesnik/weather-app-rosane">Open-source code</a> by Rosane Lesnik!
 </html>
+</body>
