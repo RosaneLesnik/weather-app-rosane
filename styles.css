@@ -28,6 +28,7 @@ button {
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 60px;
+  margin-left: 250px;
 }
 
 h2 {
@@ -62,6 +63,7 @@ h5 {
 h6 {
   font-family: "Poppins", sans-serif;
   font-size: 50px;
+  margin-left: 250px;
 }
 
 ul {
