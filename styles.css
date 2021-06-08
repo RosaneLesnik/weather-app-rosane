@@ -78,11 +78,21 @@ ul {
   border-radius: 10px;
 }
 
-.icon {
-  text-align: center;
-  font-size: 50px;
+.weather-temperature img {
+  margin-right: 10px;
+  margin-top: -40px;
+  height: 64px;
+  width: 64px;
 }
 
-.temperature {
-  font-size: 50px;
+.weather-temperature strong {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 20px;
+  top: -30px;
 }

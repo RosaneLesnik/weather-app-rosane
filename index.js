@@ -52,15 +52,20 @@ search(city);
 }
 
 function displayWeatherCondition(response) {  
-  
+
+  let iconElement = document.querySelector("icon");
+
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
   document.querySelector("#description").innerHTML = response.data.weather[0].main;
   document.querySelector("#feelsLike").innerHTML = Math.round(response.data.main.feels_like);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
-  let iconElement = document.querySelector("icon");
-  iconElement.setAttribute("src",`http://openweathermap.org/img/wn/10d@2x.png`);
+  
+  iconElement.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/10d@2x.png`
+      );
   
 }
 
