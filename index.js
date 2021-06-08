@@ -34,6 +34,7 @@ let months = [
 h4.innerHTML = `${day}, ${month} ${date}, ${year}. ${hours}h${minutes}min.`;
 
 
+
 function search(city){
   let apiKey = "4193082e2ca918e90336a1dd168a0a57";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -53,11 +54,13 @@ search(city);
 function displayWeatherCondition(response) {  
   
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp) + "ºC";
+  document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
   document.querySelector("#description").innerHTML = response.data.weather[0].main;
   document.querySelector("#feelsLike").innerHTML = Math.round(response.data.main.feels_like);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
+  let iconElement = document.querySelector("icon");
+  iconElement.setAttribute("src",`http://openweathermap.org/img/wn/10d@2x.png`);
   
 }
 
