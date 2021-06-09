@@ -56,6 +56,7 @@ function displayWeatherCondition(response) {
   
 
   document.querySelector("#city").innerHTML = response.data.name;
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#temperature").innerHTML = Math.round(celsiusTemperature);
   document.querySelector("#description").innerHTML = response.data.weather[0].description;
   document.querySelector("#feelsLike").innerHTML = Math.round(response.data.main.feels_like);
@@ -65,14 +66,13 @@ function displayWeatherCondition(response) {
   let iconElement = document.querySelector("#icon");
 
   iconElement.setAttribute(
-      "src",
-      `http://openweathermap.org/img/wn/${responde.data.weather[0].icon}@2x.png`
-      );
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-  celsiusTemperature = response.data.main.temp;
-  
 }
+
 
 function searchLocation(position) {
  let apiKey = "4193082e2ca918e90336a1dd168a0a57";
@@ -96,7 +96,7 @@ function displayFahrenheitTemperature(event) {
 function displayCelsiusTemperature(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
-    temperatureElement.innerHTML = MAth.round(celsiusTemperature);
+    temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 let celsiusTemperature = null;
@@ -110,7 +110,7 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
-let CelsiusLink = document.querySelector("#celsius-link");
+let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search ("Lisbon");
