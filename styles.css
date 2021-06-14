@@ -96,3 +96,8 @@ ul {
   font-size: 20px;
   top: -30px;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
