@@ -106,3 +106,7 @@ ul {
 .weather-forecast-temperature-min {
   opacity: 0.7;
 }
+
+.temp-link {
+  text-decoration: inherit;
+}
