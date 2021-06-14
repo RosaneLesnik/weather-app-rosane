@@ -33,6 +33,32 @@ let months = [
 
 h4.innerHTML = `${day}, ${month} ${date}, ${year}. ${hours}h${minutes}min.`;
 
+function displayForecast() {
+
+    let forecastElement = document.querySelector("#forecast");
+
+    let forecastHTML = `<div class="row">`;
+    let days = ["Thu" , "Fri" , "Sat" , "Sun" , "Mon" , "Tue"];
+    days.forEach(function (day) {
+        forecastHTML = 
+    forecastHTML + 
+    `    
+                    <div class="col-2">
+                        <div class="weather-forecast-date">${day}</div>
+                        <i class="fas fa-cloud-sun"></i>
+                        <div class="weather-forecast-temperature">
+                            <span class="weather-forecast-temperature-max"> 18º</span>
+                            <span class="weather-forecast-temperature-min"> 12º </span>
+                        </div>
+                        </div>
+    `; 
+    });
+
+    
+
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+}
 
 
 function search(city){
@@ -114,3 +140,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search ("Lisbon");
+displayForecast();
