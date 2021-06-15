@@ -3,6 +3,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
+  margin: 0 auto;
 }
 
 form {
@@ -18,9 +19,12 @@ button {
   background-color: #b4cad7;
   border-radius: 70px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  padding: 15px 20px;
+  padding: 15px 25px;
   border: none;
   color: #132238;
+  position: relative;
+  bottom: 55px;
+  left: 350px;
 }
 
 h1 {
@@ -62,12 +66,14 @@ ul {
   background-color: #b4cad7;
   opacity: 0.9;
   border: 1px solid #194350;
+  margin: 0 auto;
 }
 
 .enter-city {
   background-color: #b4cad7;
   opacity: 0.9;
   border: 1px solid #194350;
+  margin: 0 auto;
 }
 
 .weather-app {
